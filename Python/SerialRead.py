@@ -16,7 +16,7 @@ def clean(L):
 
 def write(L):
     nm = 0
-    file = open("datas.txt", mode='w')
+    file = open("./datas.txt", mode='w')
     for i in range(len(L)):
         file.write(L[i] + '|')
         file.write(str(nm))
@@ -26,7 +26,7 @@ def write(L):
 
 
 def plot():
-    for line in open("data.txt", mode='r'):
+    for line in open("./data.txt", mode='r'):
         values = [int(s) for s in line.split('|')]
         X.append(values[0])
         Y.append(values[1])
